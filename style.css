@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: system-ui, Arial, Helvetica, sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,4 +11,49 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	margin: 0;
+	background: linear-gradient(320.54deg, #00069f 0%, #120010 72.37%),
+		linear-gradient(58.72deg, #69d200 0%, #970091 100%),
+		linear-gradient(121.28deg, #8cff18 0%, #6c0075 100%),
+		linear-gradient(121.28deg, #8000ff 0%, #000000 100%),
+		linear-gradient(180deg, #00ff19 0%, #24ff00 0.01%, #2400ff 100%),
+		linear-gradient(52.23deg, #0500ff 0%, #ff0000 100%),
+		linear-gradient(121.28deg, #32003a 0%, #ff4040 100%),
+		radial-gradient(50% 72.12% at 50% 50%, #eb00ff 0%, #110055 100%);
+	background-blend-mode: screen, color-dodge, color-burn, screen, overlay,
+		difference, color-dodge, normal;
+}
+
+h3 {
+	color: #fff;
+	margin: 10px 0 20px;
+	text-align: center;
+}
+
+.container {
+	width: 500px;
+}
+
+textarea {
+	border: 0;
+	display: block;
+	width: 100%;
+	height: 100px;
+	font-family: inherit;
+	padding: 10px;
+	margin: 0 0 20px;
+	font-size: 16px;
+}
+
+.tag {
+	background-color: #f0932b;
+	color: #fff;
+	border-radius: 50px;
+	padding: 10px 20px;
+	margin: 0 5px 10px 0;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.tag.highlight {
+	background-color: #fa4c2d;
 }
